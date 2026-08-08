@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header class="main-header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="navbar">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm a Frontend & Backend Developer</h1>
+                <p>Building clean, responsive, and functional web applications.</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <img src="assets/Nsom.jpeg" alt="Professional headshot profile photo" class="profile-img">
+                <div class="about-text">
+                    <p>I am a junior software developer focused on writing clean, accessible HTML, structural CSS, and solid backend systems. I enjoy creating responsive layouts and building structural application architectures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5 &amp; CSS3</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Django Framework</div>
+                <div class="skill-card">C / C++</div>
+                <div class="skill-card">JavaScript</div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Frontend Development Cohort</h3>
+                    <p class="meta">Frontend 2026 Training | 2026 - Present</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Self-Taught Systems &amp; Web Development</h3>
+                    <p class="meta">Online Resources &amp; Projects | 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="container">
+            <h2>Hobbies &amp; Interests</h2>
+            <ul class="hobbies-list">
+                <li>Algorithm Design/ Coding</li>
+                <li>Open Source Contributing</li>
+                <li>AI Hardware Architecture</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>Contact Section</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Bryann Nsom. Built for efficiency.</p>
+    </footer>
+
+</body>
+</html>

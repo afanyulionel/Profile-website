@@ -28,4 +28,5 @@ The goal of this project was to build a clean, classic-styled site. I prioritize
 ---
 **Author:** Bryann Nsom  
 *Currently focused on web development, and becoming full stack engineer
+**Netlify Link**: [https://nsom-profile-site.netlify.app/]
 

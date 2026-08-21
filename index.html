@@ -1,108 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Profile</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <!-- link base and reset styles -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script defer src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
     <!-- Header & Navigation Bar -->
-    <header class="main-header">
-        <div class="logo">MyPortfolio</div>
-        <nav class="navbar">
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="main-header flex">
+      <div class="logo">MyPortfolio</div>
+      <nav class="gap-24 flex">
+        <!-- Inject from JavaScript -->
+        <a href="#hero" class="text-secondary">Home</a>
+        <a href="#about" class="text-secondary">About</a>
+        <a href="#skills" class="text-secondary">Skills</a>
+        <a href="#education" class="text-secondary">Education</a>
+        <a href="#hobbies" class="text-secondary">Hobbies</a>
+        <a href="#contact" class="text-secondary">Contact</a>
+      </nav>
     </header>
 
     <!-- Main Content Area -->
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, I'm a Frontend & Backend Developer</h1>
-                <p>Building clean, responsive, and functional web applications.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Hi, I'm a Frontend & Backend Developer</h1>
+          <p>Building clean, responsive, and functional web applications.</p>
+          <p id="message-box">
+            <!-- message: Feature in progress. -->
+          </p>
+          <a href="#contact" class="btn" id="get-in-touch">Get In Touch</a>
+        </div>
+      </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <img src="assets/Nsom.jpeg" alt="Professional headshot profile photo" class="profile-img">
-                <div class="about-text">
-                    <p>I am a junior software developer focused on writing clean, accessible HTML, structural CSS, and solid backend systems. I enjoy creating responsive layouts and building structural application architectures.</p>
-                </div>
-            </div>
-        </section>
+      <!-- About Me Section -->
+      <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <img
+            src="./assets/Nsom.jpeg"
+            alt="Professional headshot profile photo"
+            class="profile-img"
+          />
+          <div class="about-text">
+            <p>
+              I am a junior software developer focused on writing clean,
+              accessible HTML, structural CSS, and solid backend systems. I
+              enjoy creating responsive layouts and building structural
+              application architectures.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">HTML5 &amp; CSS3</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Django Framework</div>
-                <div class="skill-card">C / C++</div>
-                <div class="skill-card">JavaScript</div>
+      <!-- Skills Section -->
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Inject from JavaScript -->
+          <div class="skill-card">HTML5 &amp; CSS3</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Django Framework</div>
+          <div class="skill-card">C / C++</div>
+          <div class="skill-card">JavaScript</div>
+        </div>
+      </section>
 
-            </div>
-        </section>
+      <!-- Education Section -->
+      <section id="education" class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Frontend Development Cohort</h3>
+            <p class="meta">Frontend 2026 Training | 2026 - Present</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Self-Taught Systems &amp; Web Development</h3>
+            <p class="meta">Online Resources &amp; Projects | 2025</p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Education Section -->
-        <section id="education" class="container">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Frontend Development Cohort</h3>
-                    <p class="meta">Frontend 2026 Training | 2026 - Present</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Self-Taught Systems &amp; Web Development</h3>
-                    <p class="meta">Online Resources &amp; Projects | 2025</p>
-                </div>
-            </div>
-        </section>
+      <!-- Hobbies Section -->
+      <section id="hobbies" class="container">
+        <h2>Hobbies &amp; Interests</h2>
+        <ul class="hobbies-list">
+          <!-- Inject from JavaScript -->
+          <li>Algorithm Design/ Coding</li>
+          <li>Open Source Contributing</li>
+          <li>AI Hardware Architecture</li>
+        </ul>
+      </section>
 
-        <!-- Hobbies Section -->
-        <section id="hobbies" class="container">
-            <h2>Hobbies &amp; Interests</h2>
-            <ul class="hobbies-list">
-                <li>Algorithm Design/ Coding</li>
-                <li>Open Source Contributing</li>
-                <li>AI Hardware Architecture</li>
-            </ul>
-        </section>
+      <!-- Contact Section -->
+      <!-- Validate form.... Ensure email is an email, ensure name is at least 3 chars, ensure that message is at least 3 words... -->
+      <section id="contact" class="container">
+        <h2>Contact Section</h2>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
 
-        <!-- Contact Section -->
-        <section id="contact" class="container">
-            <h2>Contact Section</h2>
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="main-footer">
-        <p>&copy; 2026 Bryann Nsom. Built for efficiency.</p>
+      <p>&copy; 2026 Bryann Nsom. Built for efficiency.</p>
     </footer>
-
-</body>
+    <script>
+      // document...
+      const getInTouchBtn = document.getElementById("get-in-touch");
+      const messageBox = document.getElementById("message-box");
+      getInTouchBtn.addEventListener("click", function (event) {
+        //   event.preventDefault(); // Prevent default anchor behavior
+        messageBox.textContent = "Feature in progress.";
+      });
+      // get name input
+    //   const name = document.getElementById("name");
+    //   name.value;
+    // get the form id....
+    const contactForm = document.querySelector(".contact-form");
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+    })
+      // write entire js here...
+      // window
+      /**
+       * 1. alert
+       * 2. Prompt
+       *
+       *
+       **/
+      //   alert("Welcome to my personal profile website!"); // Display an alert message
+      //   prompt("Please enter your name:"); // Prompt the user for input
+    </script>
+    <!-- <script src="./scripts/script.js"></script> -->
+    <!-- remote source -->
+    <!-- <script src="https://js.com/app.js"></script> -->
+  </body>
 </html>

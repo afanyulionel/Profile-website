@@ -1,0 +1,10 @@
+/* --- Base Reset & Variables --- */
+* {
+  box-sizing: border-box; /* content-box by default */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+}

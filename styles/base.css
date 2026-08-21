@@ -1,0 +1,20 @@
+/* Define variables */
+:root {
+  --primary-color: #221a1a;
+  --secondary-color: #666666;
+  --font-family: 'Arial', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-24 { 
+    gap: 24px;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}   

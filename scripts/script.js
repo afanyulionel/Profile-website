@@ -1,0 +1,2 @@
+// index.html
+// Move the script tag to the bottom of the body section to ensure that the DOM is fully loaded before the script runs. This will prevent any potential issues with accessing elements that may not yet exist in the DOM when the script is executed.
